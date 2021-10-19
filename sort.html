@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sort with jQuery</title>
+	<style>
+		table, th, td {
+			border: 2px solid black;
+			border-collapse: collapse;
+			text-align: center;
+			width: 30%;
+			height: 3rem;
+		}
+		th {
+			cursor: pointer;
+			background: lightgray;
+		}
+	</style>
+
+	<script type="text/javascript" src="scripts/jquery-3.6.0.js"></script>
+  <script src="sort.js"></script>
+
+</head>
+<body>
+	<table id="mytable">
+		<tr>
+			<th onclick="sort_name()">Name</th>
+			<th onclick="sort_age()">Age</th>
+			<th onclick="sort_institute()">Institute</th>
+			<th onclick="sort_area()">Area</th>
+		</tr>
+
+		<tbody id="table1">
+			<tr>
+				<td>Saiful</td>
+				<td>30</td>
+				<td>Eskayef Pharma</td>
+				<td>Dhanmondi</td>
+			</tr>
+
+			<tr>
+				<td>Piash</td>
+				<td>28</td>
+				<td>Talent Centric</td>
+				<td>Narinda</td>
+			</tr>
+
+			<tr>
+				<td>Sezan</td>
+				<td>29</td>
+				<td>Edify</td>
+				<td>Mirpur</td>
+			</tr>
+
+			<tr>
+				<td>Prince</td>
+				<td>28</td>
+				<td>247 Digital</td>
+				<td>Sewrapara</td>
+			</tr>
+		</tbody>
+
+	</table>
+
+	<input type="hidden" id="name_order" value='asc'>
+	<input type="hidden" id="age_order" value='asc'>
+	<input type="hidden" id="institute_order" value='asc'>
+	<input type="hidden" id="area_order" value='asc'>
+
+	
+
+</body>
+</html>
